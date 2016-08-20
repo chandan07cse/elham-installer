@@ -25,6 +25,8 @@ class NewInstaller extends Command{
     //method used to process the commands however we need to
     public function execute(InputInterface $input, OutputInterface $output)
     {
+        if (! class_exists('ZipArchive'))
+            throw new RuntimeException('The Zip PHP extension is not installed. Please install it and try again.');
 
         //assert a directory exists or not
         $directory = getcwd().'/'.$input->getArgument('name');

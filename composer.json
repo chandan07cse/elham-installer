@@ -20,5 +20,8 @@
     "psr-4": {
       "installer\\": "installer/"
     }
-  }
+  },
+  "bin": [
+    "elham"
+  ]
 }

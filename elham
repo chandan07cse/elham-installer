@@ -1,4 +1,4 @@
-#! /usr/bin/php
+#! /usr/bin/env php
 <?php
 use Symfony\Component\Console\Application;
 use GuzzleHttp\Client as Client;
@@ -11,5 +11,3 @@ if (file_exists(__DIR__.'/../../autoload.php')) {
 $app = new Application('Elham Installer','1.0.0');
 $app->add(new NewInstaller(new Client));
 $app->run();
-
-?>
