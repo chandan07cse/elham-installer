@@ -1,0 +1,24 @@
+{
+  "name": "chandan07cse/elham-installer",
+  "description": "Elham Installer - A Product Of UROSD Lab",
+  "keywords": ["Elham Installer","ELham Installer Candidate", "Installation Candidate Elham"],
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Md. Ainul Moin Noor",
+      "email": "freak.arian@gmail.com",
+      "homepage": "https://github.com/chandan07cse/Elham",
+      "role": "Developer"
+    }
+  ],
+  "require":{
+    "symfony/console":"~2.0",
+    "guzzlehttp/guzzle": "^6.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "installer\\": "installer/"
+    }
+  }
+}
